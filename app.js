@@ -80,6 +80,7 @@ console.log(mensaje);  */
     console.log("Hello " + i);
 }  */
 
+/* Sesion 2
 var materias = ["Español", "Mate", "Historia", "Ingles"]
 var texto = "";
 var mor;
@@ -94,5 +95,86 @@ for(var i = 1; i <= 50; i++ ){
 
     i = i++ + 1
    console.log(i)
+} */
+
+
+/* SESION 3
+
+function nacimiento(){
+
+    nombre = prompt("cual es tu nombre");
+    edad = Number(prompt("que edad tienes"));
+    año = 2020 - edad; 
+
+    resultado = `Hola tu nombre es ${nombre} y\ tu año de nacimiento es ${año}`;
+
+    return resultado
+
 }
 
+console.log(nacimiento()); */
+
+// var num1 = Number(prompt("Ingresa el primer numero"));
+
+// var num2 = Number(prompt("Ingresa el segundo numero"));
+
+// function comparative(){
+
+
+//     if(num1 > num2){
+        
+//         return `${num1} es mayor a ${num2}`;
+
+//     }else if(num1 < num2){
+
+//         return `${num2} es mayor a ${num1}`;
+
+//     }else{
+
+//         return `${num1} es igual a ${num2}`;
+//     }
+
+// }
+
+// console.log(comparative());
+
+
+// var queHaces = function(trabajo, nombre){
+//     switch(trabajo){
+//         case 'programador':
+//             return nombre + "Debes de tener mucha paciencia";
+
+//         case 'diseñador':
+//             return nombre + "Para ser diseñador necesitas ser creativo.";
+
+//         default:
+//             return nombre + "No se que es " + trabajo + "pero cuentame mas";
+//     }
+
+// }
+
+// console.log(queHaces('arquitecto', 'Sebastian '));
+
+// (function calculaEdad(nacimiento, nombre){
+//     let edad = 2020 - nacimiento;
+//     let infoUsuario = edad + nombre; 
+//     console.log(infoUsuario);
+//     return infoUsuario;
+// }(1996, " Seba"));
+
+
+function fibonacci(num) {
+    if (num <= 1) return 1;
+  
+    return fibonacci(num - 1) + fibonacci(num - 2);
+  }
+  
+  function fibonacciSequence(limit) {
+    if(limit < 1) return console.log('Limit must be greater than 0');
+  
+    for(var i = 0; i < limit; i++ ) {
+      console.log( fibonacci(i) );
+    }
+  }
+
+  console.log(fibonacciSequence(9));
